@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
+use App\Http\Controllers\HomeController;
+
+Route::get('/', [HomeController::class, 'getIndex']);
 
 $controllerPath = app_path('Http/Controllers');
 $controllers = array_map(function ($file) {
