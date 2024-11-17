@@ -9,9 +9,18 @@ class ViewController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function getIndex()
     {
         return view('site.index');
+    }
+
+    public function getUserSetting()
+    {
+        $params = [
+            'title' => 'Ini Judul',
+        ];
+
+        return view('user.setting', $params);
     }
 
     /**
