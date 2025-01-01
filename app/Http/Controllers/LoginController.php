@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class LoginController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -23,21 +24,6 @@ class HomeController extends Controller
      */
     public function getIndex()
     {
-        return view('landing-page.index');
-    }
-
-    public function getTentangKami()
-    {
-        return view('landing-page.tentang-kami');
-    }
-
-    public function getStatistik()
-    {
-        return view('landing-page.statistik');
-    }
-
-    public function getLapor()
-    {
-        return view('landing-page.lapor');
+        return view('auth.login');
     }
 }
