@@ -1,0 +1,35 @@
+:root {
+    --lpr-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    padding: 20px;
+    background-color: white !important;
+    box-shadow: var(--lpr-box-shadow);
+    position: relative;
+    z-index: 100;
+}
+
+.hero {
+    position: relative;
+    padding-top: 160px;
+    background: linear-gradient(130deg, color-mix(in srgb, var(--accent-color), var(--accent-color) 95%) 67%, color-mix(in srgb, var(--accent-color), transparent 98%) 29%, #dc707000 69%);
+}
+
+.hero .company-badge{
+    border: 1px solid white;
+}
+
+.text-primary {
+    color: var(--accent-color);
+}
+
+.bg-white {
+    background-color: white !important;
+}
+
+.btn-white {
+    border-radius: 50px;
+    background-color: white;
+    padding: 8px 15px;
+}

@@ -15,27 +15,29 @@
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.bunny.net/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.bunny.net/css?family=plus-jakarta-sans:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="{{asset('bootstrap/dist/css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/bootstrap/dist/css/bootstrap.css')}}">
     <link href="{{asset('assets/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
     <link href="{{asset('assets/aos/aos.css')}}" rel="stylesheet">
     <link href="{{asset('assets/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
     <link href="{{asset('assets/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
     <link href="{{asset('assets/css/style-custom.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
 
     <!-- JS -->
     <script src="{{asset('assets/js/jquery-3.7.1.min.js')}}"></script>
     <script src="{{asset('assets/bootstrap/dist/js/bootstrap.js')}}"></script>
 
 </head>
-<body class="index-page">
+<body>
 
     @include('components.header')
 
     <div id="app-section">
-        <main class="py-4">
+        <main class="">
             @yield('content')
         </main>
     </div>
@@ -46,7 +48,7 @@
         <i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
-    <script src="{{asset('assets/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('assets/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset('assets/php-email-form/validate.js')}}"></script>
     <script src="{{asset('assets/aos/aos.js')}}"></script>
     <script src="{{asset('assets/glightbox/js/glightbox.min.js')}}"></script>

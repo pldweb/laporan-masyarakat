@@ -63,15 +63,11 @@
                     <li><a href="#">Flexo</a></li>
                 </ul>
             </div>
-
         </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">iLanding</strong> <span>All Rights Reserved</span></p>
-        <div class="credits">
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
+        <p>© <span>Copyright</span> Designed by <a href="">Muhammad Rivaldi Fanani</p>
     </div>
 
 </footer>
