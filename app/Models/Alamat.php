@@ -21,6 +21,11 @@ class Alamat extends Model
 
     public function user()
     {
+        return $this->hasOne(User::class, 'id', 'user_id');
+    }
 
+    public function laporan()
+    {
+        return $this->hasOne(Laporan::class, 'id', 'laporan_id');
     }
 }
