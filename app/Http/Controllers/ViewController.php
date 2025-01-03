@@ -9,7 +9,7 @@ class ViewController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function getIndex()
+    public function index()
     {
         return view('site.index');
     }

@@ -3,11 +3,12 @@
 }
 
 .contact-form {
-    padding: 20px;
+    padding: 20px 35px;
     background-color: white !important;
     box-shadow: var(--lpr-box-shadow);
     position: relative;
     z-index: 100;
+    border-radius: 10px;
 }
 
 .hero {

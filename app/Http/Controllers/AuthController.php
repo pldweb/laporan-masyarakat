@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class LoginController extends Controller
+class AuthController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -22,8 +22,18 @@ class LoginController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function getIndex()
+    public function index()
     {
         return view('auth.login');
+    }
+
+    public function getForgotPassword()
+    {
+        return view('auth.forgot-password');
+    }
+
+    public function getRegister()
+    {
+        return view('auth.register');
     }
 }

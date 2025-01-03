@@ -16,7 +16,7 @@
                         </h1>
                         <p class="mb-2 mb-md-5 text-white">Laporkan keluhan Anda terhadap apapun yang menjadi masalah di sekitar Anda</p>
                         <div class="hero-buttons">
-                            <a href="{{url('home/lapor')}}" class="btn btn-white me-0 me-sm-2 mx-1" style="color: var(--accent-color)">Laporkan Sekarang</a>
+                            <a href="{{url('home/lapor')}}" class="btn-white text-red-700 px-4 py-3 fw-semibold" style="color: var(--accent-color)">Laporkan Sekarang</a>
                         </div>
                     </div>
                 </div>
@@ -28,23 +28,47 @@
                             <hr>
                             <form action="forms/contact.php" method="post" class="php-email-form">
                                 <div class="row gy-4">
-                                    <div class="col-md-12">
-                                        <input type="text" name="judul" class="form-control" placeholder="Ketik Judul Laporan" required="">
-                                    </div>
-                                    <div class="col-md-12">
-                                        <input type="text" name="judul" class="form-control" placeholder="Ketik Judul Laporan" required="">
-                                    </div>
                                     <div class="col-12">
-                                        <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                                        <label for="judul" class="form-label">Judul Laporan</label>
+                                        <input type="text" name="judul" class="form-control" required="">
                                     </div>
-                                    <div class="col-12">
-                                        <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                                    <div class="col-12 my-2">
+                                        <label for="deskripsi" class="form-label">Isi Laporan</label>
+                                        <textarea type="text" rows="3" class="form-control" name="deskripsi" required=""></textarea>
                                     </div>
-                                    <div class="col-12 text-center">
+                                    <div class="col-12 my-2">
+                                        <label for="tanggal" class="form-label">Tanggal Laporan</label>
+                                        <div class="input-group date" id="datepicker">
+                                            <input type="text" class="form-control" id="date"/>
+                                            <span class="input-group-append">
+                                                <span class="input-group-text bg-light d-block">
+                                                    <i class="fa fa-calendar"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 my-2">
+                                        <label for="lokasi" class="form-label">Lokasi Kejadian</label>
+                                        <input type="text" name="lokasi" class="form-control" required="">
+                                    </div>
+                                    <div class="col-md-12 my-2">
+                                        <label for="kategori" class="form-label">Kategori Laporan</label>
+                                        <select class="form-select" aria-label="select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 my-2">
+                                        <label for="formFile" class="form-label">Lampirkan Foto Lokasi</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                    <div class="col-12 my-2">
                                         <div class="loading">Loading</div>
                                         <div class="error-message"></div>
                                         <div class="sent-message">Your message has been sent. Thank you!</div>
-                                        <button type="submit" class="btn">Send Message</button>
+                                        <button type="submit" class="btn-primary btn">Kirim Laporan</button>
                                     </div>
                                 </div>
                             </form>
@@ -101,5 +125,11 @@
             </div>
         </div>
     </section>
+
+    <script>
+        $(function(){
+            $('#datepicker').datepicker();
+        });
+    </script>
 
 @endsection
