@@ -6,23 +6,23 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <div class="hero-content" >
+                    <div class="hero-content position-relative lp-text-content" data-aos="fade-up" data-aos-duration="1200">
                         <div class="company-badge mb-4 text-white">
                             <i class="bi bi-gear-fill me-2"></i>
                             Bekerja Untuk Kenyamanan Rakyat
                         </div>
-                        <h1 class="mb-2 text-white">Laporkan Masalah Fasilitas Umum <br>
+                        <h1 class="mb-2 text-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">Laporkan Masalah Fasilitas Umum <br>
                             <span class="text-white">Untuk Memajukan Indonesia</span>
                         </h1>
-                        <p class="mb-2 mb-md-5 text-white">Laporkan keluhan Anda terhadap apapun yang menjadi masalah di sekitar Anda</p>
-                        <div class="hero-buttons">
+                        <p class="mb-2 mb-md-5 text-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="250">Laporkan keluhan Anda terhadap apapun yang menjadi masalah di sekitar Anda</p>
+                        <div class="hero-buttons" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
                             <a href="{{url('home/lapor')}}" class="btn-white text-red-700 px-4 py-3 fw-semibold" style="color: var(--accent-color)">Laporkan Sekarang</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-6">
-                    <div class="lp-card-form">
+                    <div class="lp-card-form" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="700">
                         <div class="contact-form">
                             <h3 class="text-center fw-bold">Sampaikan Laporan Anda</h3>
                             <hr>

@@ -14,7 +14,19 @@
 .hero {
     position: relative;
     padding-top: 160px;
-    background: linear-gradient(130deg, color-mix(in srgb, var(--accent-color), var(--accent-color) 95%) 67%, color-mix(in srgb, var(--accent-color), transparent 98%) 29%, #dc707000 69%);
+    margin-bottom: 50px;
+}
+
+.hero::before {
+    background-image: url('../../assets/img/bg-laporan.png');
+    background-size: contain;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    top: -306px;
+    background-repeat: no-repeat;
+    rotate: 5deg;
+    transform: scale(1.1);
 }
 
 .hero .company-badge{
@@ -33,4 +45,8 @@
     border-radius: 50px;
     background-color: white;
     padding: 8px 15px;
+}
+
+.lp-text-content {
+    top: -100px;
 }
