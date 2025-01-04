@@ -1,4 +1,4 @@
-<header id="header" class="header d-flex align-items-center fixed-top">
+<header id="header" class="header d-flex align-items-center fixed-top" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="600">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
         <a href="{{url('/')}}" class="logo d-flex align-items-center me-auto me-xl-0">

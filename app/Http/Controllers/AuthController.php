@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Interfaces\AuthRepositoryInterfaces;
+use App\Repositories\AuthRepository;
 use Illuminate\Http\Request;
 
 class AuthController extends Controller
@@ -12,9 +14,12 @@ class AuthController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
 
+    private AuthRepositoryInterfaces $authRepository;
+
+    public function __construct(AuthRepositoryInterfaces $authRepository)
+    {
+        $this->authRepository = $authRepository;
     }
 
     /**
@@ -35,5 +40,17 @@ class AuthController extends Controller
     public function getRegister()
     {
         return view('auth.register');
+    }
+
+    public function postLogin()
+    {
+        $credentials = request()->only('email', 'password');
+
+        if ($this->authRepository->login($credentials)) {
+            dd('Login Successful');
+        }
+
+        return redirect()->back()->withErrors(['email' => 'Email or password is not correct']);
+
     }
 }

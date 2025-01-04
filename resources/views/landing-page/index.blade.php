@@ -2,7 +2,7 @@
 @section('content')
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section">
+    <section id="hero" class="hero section mb-0">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -26,7 +26,7 @@
                         <div class="contact-form">
                             <h3 class="text-center fw-bold">Sampaikan Laporan Anda</h3>
                             <hr>
-                            <form action="forms/contact.php" method="post" class="php-email-form">
+                            <form action="{{url('save-laporan')}}" method="post" class="php-email-form">
                                 <div class="row gy-4">
                                     <div class="col-12">
                                         <label for="judul" class="form-label">Judul Laporan</label>
@@ -77,8 +77,8 @@
                 </div>
             </div>
 
-            <div class="row stats-row gy-4 mt-5">
-                <div class="col-lg-3 col-md-6">
+            <div class="row gy-4 mt-5 pb-0">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="1250">
                     <div class="stat-item">
                         <div class="stat-icon">
                             <i class="bi bi-trophy"></i>
@@ -89,7 +89,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="1300">
                     <div class="stat-item">
                         <div class="stat-icon">
                             <i class="bi bi-briefcase"></i>
@@ -100,7 +100,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="1350">
                     <div class="stat-item">
                         <div class="stat-icon">
                             <i class="bi bi-graph-up"></i>
@@ -111,7 +111,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="1400">
                     <div class="stat-item">
                         <div class="stat-icon">
                             <i class="bi bi-award"></i>
