@@ -26,8 +26,7 @@
     <link href="{{asset('assets/aos/aos.css')}}" rel="stylesheet">
     <link href="{{asset('assets/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
     <link href="{{asset('assets/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/css/style-custom.css')}}" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/admin/admin.css')}}">
 
     <!-- JS -->
     <script src="{{asset('assets/js/jquery-3.7.1.min.js')}}"></script>
@@ -37,28 +36,34 @@
 </head>
 <body>
 
-    @include('components.header')
+<div class="wrapper">
 
-    <div id="app-section">
-        <main class="">
+    @include('admin.component.sidebar')
+
+    <div class="main">
+
+        @include('admin.component.navbar')
+
+        <main class="content dashboard-main">
             @yield('content')
         </main>
+
+        @include('admin.component.footer')
+
     </div>
+</div>
 
-    @include('components.footer')
+@include('admin.component.script')
 
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
-        <i class="bi bi-arrow-up-short"></i></a>
+<!-- Vendor JS Files -->
+<script src="{{asset('assets/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('assets/php-email-form/validate.js')}}"></script>
+<script src="{{asset('assets/aos/aos.js')}}"></script>
+<script src="{{asset('assets/glightbox/js/glightbox.min.js')}}"></script>
+<script src="{{asset('assets/swiper/swiper-bundle.min.js')}}"></script>
 
-    <!-- Vendor JS Files -->
-    <script src="{{asset('assets/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('assets/php-email-form/validate.js')}}"></script>
-    <script src="{{asset('assets/aos/aos.js')}}"></script>
-    <script src="{{asset('assets/glightbox/js/glightbox.min.js')}}"></script>
-    <script src="{{asset('assets/swiper/swiper-bundle.min.js')}}"></script>
-
-    <!-- Main JS File -->
-    <script src="{{asset('assets/js/main.js')}}"></script>
+<!-- Main JS File -->
+<script src="{{asset('assets/admin/admin.js')}}"></script>
 
 </body>
 </html>
