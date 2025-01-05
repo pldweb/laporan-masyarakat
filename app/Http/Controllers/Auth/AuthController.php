@@ -1,11 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Interfaces\AuthRepositoryInterfaces;
-use App\Repositories\AuthRepository;
-use Illuminate\Http\Request;
 
 class AuthController extends Controller
 {
