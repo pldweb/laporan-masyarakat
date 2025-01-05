@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.site')
 @section('content')
 
     <!-- Hero Section -->
@@ -6,17 +6,22 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <div class="hero-content position-relative lp-text-content" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="hero-content position-relative lp-text-content" data-aos="fade-up"
+                         data-aos-duration="1200">
                         <div class="company-badge mb-4 text-white">
                             <i class="bi bi-gear-fill me-2"></i>
                             Bekerja Untuk Kenyamanan Rakyat
                         </div>
-                        <h1 class="mb-2 text-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">Laporkan Masalah Fasilitas Umum <br>
+                        <h1 class="mb-2 text-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                            Laporkan Masalah Fasilitas Umum <br>
                             <span class="text-white">Untuk Memajukan Indonesia</span>
                         </h1>
-                        <p class="mb-2 mb-md-5 text-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="250">Laporkan keluhan Anda terhadap apapun yang menjadi masalah di sekitar Anda</p>
+                        <p class="mb-2 mb-md-5 text-white" data-aos="fade-up" data-aos-duration="1200"
+                           data-aos-delay="250">Laporkan keluhan Anda terhadap apapun yang menjadi masalah di sekitar
+                            Anda</p>
                         <div class="hero-buttons" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-                            <a href="{{url('home/lapor')}}" class="btn-white text-red-700 px-4 py-3 fw-semibold" style="color: var(--accent-color)">Laporkan Sekarang</a>
+                            <a href="{{url('home/lapor')}}" class="btn-white text-red-700 px-4 py-3 fw-semibold"
+                               style="color: var(--accent-color)">Laporkan Sekarang</a>
                         </div>
                     </div>
                 </div>
@@ -34,7 +39,8 @@
                                     </div>
                                     <div class="col-12 my-2">
                                         <label for="deskripsi" class="form-label">Isi Laporan</label>
-                                        <textarea type="text" rows="3" class="form-control" name="deskripsi" required=""></textarea>
+                                        <textarea type="text" rows="3" class="form-control" name="deskripsi"
+                                                  required=""></textarea>
                                     </div>
                                     <div class="col-12 my-2">
                                         <label for="tanggal" class="form-label">Tanggal Laporan</label>
@@ -127,7 +133,7 @@
     </section>
 
     <script>
-        $(function(){
+        $(function () {
             $('#datepicker').datepicker();
         });
     </script>

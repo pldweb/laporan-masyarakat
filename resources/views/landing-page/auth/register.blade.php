@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.site')
 @section('content')
     <section class="h-100 hero">
         <div class="container h-100">
@@ -12,7 +12,8 @@
                             <form method="POST" class="needs-validation" novalidate="" autocomplete="off">
                                 <div class="mb-3">
                                     <label class="mb-2 text-muted" for="name">Nama</label>
-                                    <input id="name" type="text" class="form-control" name="name" value="" required autofocus>
+                                    <input id="name" type="text" class="form-control" name="name" value="" required
+                                           autofocus>
                                     <div class="invalid-feedback">
                                         Name is required
                                     </div>

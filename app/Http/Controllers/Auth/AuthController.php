@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Interfaces\AuthRepositoryInterfaces;
+use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
@@ -27,28 +28,35 @@ class AuthController extends Controller
      */
     public function index()
     {
-        return view('auth.login');
+        return view('landing-page.auth.login');
     }
 
     public function getForgotPassword()
     {
-        return view('auth.forgot-password');
+        return view('landing-page.auth.forgot-password');
     }
 
     public function getRegister()
     {
-        return view('auth.register');
+        return view('landing-page.auth.register');
     }
 
     public function postLogin()
     {
-        $credentials = request()->only('email', 'password');
+        $credentials = request()->all();
 
         if ($this->authRepository->login($credentials)) {
-            dd('Login Successful');
+            if (Auth::user()->hasRole('admin')) {
+                return redirect('/dashboard');
+            }
         }
 
         return redirect()->back()->withErrors(['email' => 'Email or password is not correct']);
+    }
 
+    public function postLogout()
+    {
+        $this->authRepository->logout();
+        return redirect('/login');
     }
 }

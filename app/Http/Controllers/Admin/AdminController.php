@@ -10,7 +10,6 @@ class AdminController extends Controller
 {
     public function getIndex()
     {
-
         $params = [
             'sideBarMenu' => Helper::renderMenuSideBar(),
             'indicatorMenu' => Helper::renderIndicatorDashbard()
