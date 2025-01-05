@@ -1,0 +1,21 @@
+:root {
+    --red: b51e20;
+}
+
+.sidebar, .sidebar-content {
+    background: linear-gradient(45deg, #b51e20, #8a0406);
+}
+
+.sidebar-link, a.sidebar-link {
+    background-color: transparent;
+}
+
+.sidebar-link:hover, a.sidebar-link:hover {
+    background-color: white;
+    color: var(--red);
+}
+
+a.sidebar-link:hover, a.sidebar-link:hover, a.sidebar-link:hover i {
+    color: var(--red) !important;
+}
+

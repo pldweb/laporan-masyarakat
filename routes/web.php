@@ -17,6 +17,6 @@ Route::get('/statistik', [HomeController::class, 'getStatistik']);
 
 // Dashboard
 
-Route::post('post-logout', [AuthController::class, 'postLogout']);
+Route::post('post-logout', [AuthController::class, 'postLogout'])->middleware('auth');
 Route::get('/dashboard', [AdminController::class, 'getIndex']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

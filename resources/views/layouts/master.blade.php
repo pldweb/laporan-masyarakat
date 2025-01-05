@@ -27,6 +27,8 @@
     <link href="{{asset('assets/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
     <link href="{{asset('assets/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('assets/admin/admin.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/admin/admin-style.css')}}">
+
 
     <!-- JS -->
     <script src="{{asset('assets/js/jquery-3.7.1.min.js')}}"></script>
